@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+// TODO El diseño Hi-Fi se calca en vista FXML usando Screen Builder. Mediante un archivo CSS se inyectan los colores.
 
 public class MainApp extends Application {
 
