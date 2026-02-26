@@ -2,19 +2,22 @@ package ProyectoAura.app;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-// TODO El diseño Hi-Fi se calca en vista FXML usando Screen Builder. Mediante un archivo CSS se inyectan los colores.
+import java.util.Objects;
 
 public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/vistaPrincipal.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
+        Parent root = new FXMLLoader(getClass().getResource("/fxml/vistaPrincipal.fxml")).load();
+        Scene scene = new Scene(root);
 
-        stage.setTitle("Aplicación JavaFX");
+        stage.setTitle("Aura Wellness");
+        stage.getIcons().add( new Image(Objects.requireNonNull(getClass().getResourceAsStream("/image/aura.png"))) );
         stage.setScene(scene);
         stage.show();
     }

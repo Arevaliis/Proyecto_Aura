@@ -1,3 +1,2 @@
-module-info.class
-ProyectoAura\App.class
-ProyectoAura\SystemInfo.class
+ProyectoAura\controller\vistaPrincipalController.class
+ProyectoAura\app\MainApp.class

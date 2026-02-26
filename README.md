@@ -41,12 +41,11 @@ mvn archetype:generate -DarchetypeGroupId=org.openjfx -DarchetypeArtifactId=java
 Una vez creado el proyecto, para compilar y ejecutar la aplicación utiliza el siguiente comando desde la raíz del proyecto:
 
 ```
-mvn clean javafx:run
+mvn javafx:run
 ```
 
 #### ¿Qué hace este comando?
 
-- `clean` → elimina compilaciones anteriores.
 - `javafx:run` → compila el proyecto y ejecuta la clase principal configurada en el `pom.xml`.
 
 ---
